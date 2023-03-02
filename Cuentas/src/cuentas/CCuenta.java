@@ -14,7 +14,7 @@ public class CCuenta {
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
 
     /**
      *  Constructor vacio de CCuenta
@@ -40,7 +40,7 @@ public class CCuenta {
     }
 
     /**
-     * Metado estado
+     * Metodo para consultar el saldo de la cuenta
      * @return - Devuelve el saldo actual de la cuenta
      */
     public double estado()
@@ -74,38 +74,66 @@ public class CCuenta {
         setSaldo(getSaldo() - cantidad);
     }
 
+
 	/**
-	 * Metodos getters/setters para acceso a los atributos de la clase
+	 * Metodo para obtener el nombre de la cuenta
+	 * @return Devuelve el nombre de la cuenta
 	 */
 	private String getNombre() {
 		return nombre;
 	}
 
+	/** Método para establecer el nombre de la cuenta
+	 * @param nombre Recibe el nombre de la cuenta
+	 */
 	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	/**
+	 * Método para obtener el número de la cuenta
+	 * @return Devuelve el número de la cuenta
+	 */
 	private String getCuenta() {
 		return cuenta;
 	}
 
+	/**
+	 * Método para establecer el nº de la cuenta
+	 * @param cuenta  Recibe el nº de la cuenta
+	 */
 	private void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
 
+	/**
+	 * Método para obtener el saldo de la cuenta
+	 * @return Devuelve el saldo de la cuenta
+	 */
 	private double getSaldo() {
 		return saldo;
 	}
 
+	/**
+	 * Método para establecer el saldo de la cuenta
+	 * @param saldo Recibe el valor del saldo a establecer en la cuenta
+	 */
 	private void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
-	private double getTipoInterés() {
-		return tipoInterés;
+	/** Método para obtener el tipo de interés de la cuenta
+	 * @return Devuelve el tipo de interes de la cuenta
+	 */
+	private double getTipoInteres() {
+		return tipoInteres;
 	}
 
-	private void setTipoInterés(double tipoInterés) {
-		this.tipoInterés = tipoInterés;
+	/**
+	 * Metodo para establecer el tipo de interés de la cueta
+	 * @param tipoInteres Recibe el valor del tipo de interes de la cuenta
+	 */
+	private void setTipoInteres(double tipoInteres) {
+		this.tipoInteres = tipoInteres;
 	}
 }
